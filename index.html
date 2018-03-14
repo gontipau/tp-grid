@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Page title</title>
-     <meta charset="UTF-8">
-     <link rel="stylesheet" href="assets/css/main.less">
-     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-  </head>
-  <body>
+	<head>
+		<title>Page title</title>
+		 <meta charset="UTF-8">
+		 
+		 <style>
+		 
+.container {
+  display: grid;
+  grid-template: repeat (3,1fr);
+}
 
-    <h1>Hello, world!</h1>
-      
-    	<img src="/Users/gontipau/Desktop/hello-world/index/medias/240px-Oftheunicorn.jpg" alt="image licorne" />
-			
-     <p class=container> 
-        C'était une licorne blanche, de la même taille que mon cheval mais d'une foulée plus longue et plus légère. Sa crinière soyeuse volait sur son front ; le mouvement faisait courir sur  son pelage des frissons brillants et flotter sa queue épaisse. Tout son corps exhalait une lumière cendrée ; des étincelles jaillissaient parfois de ses sabots. Elle galopait comme pour porter haut la corne terrible où des nervures nacrées s'enroulaient en torsades régulières.
-       </p>
+nav {
+  grid-row: 1;
+  grid-column: 1;
+  	background: #FFEBCD;
 
-    	<p> 
-        —  Bertrand d'Astorg
-    	</p>
+}
+section {
+  grid-row: 1;
+  grid-column: ;
+  background: #8FBC8F;
 
-  </body>
+}
+article {
+  grid-row: 2;
+  grid-column: 1;
+  background: #5F9EA0;
+}
+aside {
+  grid-row: 2;
+  grid-column: 2;
+  background: #6495ED;
+
+}
+
+		 </style>
+
+	</head>
+
+	<body>
+		<div class="container">
+		  <nav>nav</nav>
+		  <section>section</section>
+		  <article>article</article>
+		  <aside>aside</aside>
+		</div>
+	</body>
 </html>
